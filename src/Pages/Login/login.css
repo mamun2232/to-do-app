@@ -1,0 +1,115 @@
+.login-from{
+     
+      /* border: 1px solid lavender; */
+  height: 100%;
+   padding: 50px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.input-grups input:not([type=checkbox]){
+      border: 1px solid lavender;
+      width: 440px;
+      height: 42px;
+      border-radius: 10px;
+      font-size: 18px;
+      padding: 0px 10px;
+      margin-top: 15px;
+      
+      /* background-color: rgb(14, 130, 231); */
+}
+
+.input-shadow{
+      box-shadow: 1px 1px 0px 0px #164b9e;
+
+}
+
+.login-massage{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+}
+
+.submit-btn{
+      background-color: #164b9e;
+      border: none;
+      color: aliceblue;
+      font-weight: 600;
+      
+}
+
+.login-massage img{
+      width: 250px;
+      height: 100%;
+     
+}
+
+.login-massage p{
+      font-size: 20px;
+      margin: 13px 0px;
+}
+
+.forgate{
+      color: #164b9e;
+      cursor: pointer;
+      font-weight: 600;
+}
+.input-grups label{
+      display: block;
+     
+}
+.login-bottom{
+      display: flex;
+}
+.login{
+      background-color:  #164b9e;
+      height: 1px;
+      width: 100%;
+      margin-top: 13px;
+}
+.login-bottom p{
+      font-size: 18px;
+      margin: 0px 15px;
+}
+
+.social-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+}
+.icon{
+      font-size: 30px;
+      margin: 0px 13px;
+}
+
+.google{
+      border: 1px solid lavender ;
+      width: 100%;
+      text-align: center;
+      padding: 8px 0px;
+      border-radius: 15px;
+      cursor: pointer;
+      
+}
+.google span{
+      font-size: 18px;
+      
+}
+
+
+
+@media screen and (max-width: 570px) {
+      .input-grups input:not([type=checkbox]){
+            border: 1px solid lavender;
+            width: 340px;
+            height: 42px;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 0px 10px;
+            margin-top: 15px;
+            
+            /* background-color: rgb(14, 130, 231); */
+      }
+}
