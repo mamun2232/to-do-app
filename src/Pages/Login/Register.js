@@ -4,6 +4,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { useNavigate } from 'react-router-dom';
 import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Loading from '../Utilites/Loading';
 
 const Register = () => {
       const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -34,6 +35,11 @@ const Register = () => {
             signInWithGoogle()
 
       }
+
+      if(Gloading || loading){
+            return <Loading></Loading>
+
+      }
         // show arror massage 
         let errorMassage;
 
@@ -42,6 +48,7 @@ const Register = () => {
   
   
         }
+
         if(user){
               navigate('/')
         }

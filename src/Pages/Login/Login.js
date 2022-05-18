@@ -7,6 +7,7 @@ import auth from '../../firebase.init';
 import './login.css'
 import { FcGoogle } from 'react-icons/fc';
 import toast from 'react-hot-toast';
+import Loading from '../Utilites/Loading';
 
 const Login = () => {
       const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -47,6 +48,10 @@ const Login = () => {
       }
         // show arror massage 
         let errorMassage;
+        if(Gloading || loading){
+            return <Loading></Loading>
+
+      }
 
         if (error || Gerror) {
               errorMassage = <p className='text-danger'>{error?.message}</p>
