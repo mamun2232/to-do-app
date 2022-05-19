@@ -54,10 +54,10 @@ const Register = () => {
         }
       
       return (
-            <div>
-                  <div className="login-from bg-white">
+            <div className=''>
+                  <div className="login-from">
                         <div>
-                              <h3 className='text-center my-5 primary-text'>Create Account</h3>
+                              <h3 className='text-center my-5 primary-text'>Register</h3>
                               <form onSubmit={handleSubmit(onSubmit)} >
                                     <div className="input-grups">
                                           <input
@@ -68,9 +68,7 @@ const Register = () => {
                                                       }
 
                                                 })}
-
-
-                                                className='input-shadow mb-0' placeholder='Name' type="text" name="name" id=""  />
+                                                className='input-shadow' placeholder='Name' type="text" name="name" id=""  />
                                           <label class="label">
 
                                                 {errors.name?.type === 'required' && <span className='text-danger'>{errors.name.message}</span>}
@@ -89,7 +87,7 @@ const Register = () => {
                                                       }
                                                 })}
 
-                                                className='input-shadow ' placeholder='Email' type="email" name="email" id="" />
+                                                className='input-shadow mb-2' placeholder='Email' type="email" name="email" id="" />
                                           <br />
                                           <label class="label">
 
@@ -128,18 +126,14 @@ const Register = () => {
 
                                           {errorMassage }
 
-                                          {/* <div className='mt-2'>
-                                                                  <input onClick={() => setAgree(!agree)} type="checkbox" name="chack" id="" />
-                                                                  <label className={`px-2 ${agree ? '' : 'text-danger'}`} htmlFor="">Accept Walton Terms and Conditions</label>
-                                                            </div> */}
-                                          {/* disabled={!agree}  */}
+                                         
                                           <input className='primary-btn' type="submit" value="Register" />
 
 
 
                                     </div>
                               </form>
-                              <p className='text-center mt-2'>All Ready Account? <span onClick={()=> navigate('/login')}>Please Login</span></p>
+                              <p className='text-center mt-2'>All Ready Account? <span className='text-primary pointer' onClick={()=> navigate('/login')}>Please Login</span></p>
 
                               <div className="socail-login mt-3">
                   <div className="login-bottom">

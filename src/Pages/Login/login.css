@@ -19,10 +19,10 @@
       /* background-color: rgb(14, 130, 231); */
 }
 
-.input-shadow{
+/* .input-shadow{
       box-shadow: 1px 1px 0px 0px #164b9e;
 
-}
+} */
 
 .login-massage{
       display: flex;
@@ -39,11 +39,7 @@
       
 }
 
-.login-massage img{
-      width: 250px;
-      height: 100%;
-     
-}
+
 
 .login-massage p{
       font-size: 20px;

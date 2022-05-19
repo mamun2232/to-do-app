@@ -83,7 +83,7 @@ const Login = () => {
                    <div>
                   <div className="login-from bg-white">
                         <div>
-                              <h3 className='text-center my-5 primary-text'>Please Login</h3>
+                              <h3 className='text-center my-5 primary-text'>Login</h3>
                               <form onSubmit={handleSubmit(onSubmit)} >
                                     <div className="input-grups">
 
@@ -127,31 +127,28 @@ const Login = () => {
                                                       })}
 
                                                 className='input-shadow' placeholder='Password' type="password" name="password" id=""  /><br />
-                                                <small onClick={()=> forgatePasswordHundeler()} className='text-end text-primary'>Forgate Password</small>
+                                               
 
                                           <label class="label">
 
                                                 {errors.password?.type === 'required' && <span className='text-danger'>{errors.password.message}</span>}
 
                                                 {errors.password?.type === 'minLength' && <span className='text-danger'>{errors.password.message}</span>}
-
+                                               
 
                                           </label>
+                                          <label onClick={()=> forgatePasswordHundeler()} className='text-end text-primary mt-2'>Forgate Password</label>
+                                          
 
                                           {errorMassage }
 
-                                          {/* <div className='mt-2'>
-                                                                  <input onClick={() => setAgree(!agree)} type="checkbox" name="chack" id="" />
-                                                                  <label className={`px-2 ${agree ? '' : 'text-danger'}`} htmlFor="">Accept Walton Terms and Conditions</label>
-                                                            </div> */}
-                                          {/* disabled={!agree}  */}
                                           <input className='primary-btn' type="submit" value="Login" />
 
 
 
                                     </div>
                               </form>
-                              <p className='text-center mt-2'>To do app new? <span onClick={()=> navigate('/register')}>Please register</span></p>
+                              <p className='text-center mt-2'>To do app new? <span className='text-primary' onClick={()=> navigate('/register')}>Please register</span></p>
 
                               <div className="socail-login mt-3">
                   <div className="login-bottom">

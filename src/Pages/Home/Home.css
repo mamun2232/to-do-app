@@ -1,0 +1,83 @@
+.task-grup input:not([type=checkbox]){
+      border: 1px solid lavender;
+      width: 440px;
+      height: 42px;
+      border-radius: 10px;
+      font-size: 18px;
+      padding: 0px 10px;
+      margin-top: 15px;
+      
+      /* background-color: rgb(14, 130, 231); */
+}
+
+/* textarea{
+      border: 1px solid lavender;
+      width: 440px;
+      border-radius: 10px;
+      font-size: 18px;
+      padding: 0px 10px;
+      margin-top: 15px;
+      height: 62px;
+} */
+
+
+
+.navbar-nav .nav-link {
+      color: black !important;
+      font-weight: 600;
+      font-size: 18px;
+      margin-left: 15px;
+  }
+
+  
+.unactive{
+    color:black !important;
+    font-weight: 600;
+
+}
+.navbar-light .navbar-brand {
+    color:black !important;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-toggler {
+      color: rgba(0, 0, 0, 0.55) !;
+      border-color: rgba(0,0,0,.1);
+  }
+
+  .active{
+    color:rgb(209, 26, 26) !important;
+  }
+  /* .navbar-light .navbar-toggler-icon {
+      background-image: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 0, 0, 0.55%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e);
+  } */
+
+  .logOutbtn{
+      border: none;
+      /* background-color: navy; */
+      background-color: #164b9e;
+      color: white;
+      padding: 0px 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-left: 10px;
+  }
+
+  .primary-btn{
+    border: none;
+    /* background-color: navy; */
+    background-color: #164b9e;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+ 
+    padding: 10px 20px;
+
+  }
+  .nav-section img{
+      width: 200px;
+      height: 100%;
+  }
+ 
+
