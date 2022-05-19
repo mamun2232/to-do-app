@@ -11,12 +11,12 @@ const ToDo = () => {
       const [user] = useAuthState(auth)
       const nameRef = useRef('')
       const desCriptionRef = useRef('')
-      const [myTask , setMytask] = useState([])
-      useEffect(()=>{
-            fetch(`http://localhost:5000/myTask?email=${user?.email}`)
-            .then(res => res.json())
-            .then(data => setMytask(data))
-      },[myTask])
+      const [myTask, setMytask] = useState([])
+      useEffect(() => {
+            fetch(`https://git.heroku.com/damp-fortress-98900.git/myTask?email=${user?.email}`)
+                  .then(res => res.json())
+                  .then(data => setMytask(data))
+      }, [myTask])
 
 
       // added task 
@@ -30,7 +30,7 @@ const ToDo = () => {
                   desCription: desCription,
                   email: user.email
             }
-            fetch('http://localhost:5000/task', {
+            fetch('https://git.heroku.com/damp-fortress-98900.git/task', {
                   method: "POST",
                   headers: {
                         'Content-type': 'application/json; charset=UTF-8',
@@ -59,7 +59,7 @@ const ToDo = () => {
                               <div className="row">
                                     <div className="col-lg-8">
                                           <div className="your-task mt-5">
-                                          <h3 className='mb-4'>Your added task</h3>
+                                                <h3 className='mb-4'>Your added task</h3>
                                                 <Table striped bordered hover responsive>
                                                       <thead>
                                                             <tr className='text-center'>
@@ -72,12 +72,12 @@ const ToDo = () => {
                                                       </thead>
                                                       <tbody>
                                                             {
-                                                                  myTask.map(( task , index) => <TaskRow
-                                                                  key={task.id}
-                                                                  index={index}
-                                                                  task={task}></TaskRow>)
+                                                                  myTask.map((task, index) => <TaskRow
+                                                                        key={task.id}
+                                                                        index={index}
+                                                                        task={task}></TaskRow>)
                                                             }
-                                                            
+
                                                       </tbody>
                                                 </Table>
                                           </div>

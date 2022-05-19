@@ -11,7 +11,7 @@ const TaskRow = ({ task, index }) => {
       const { _id, name, desCription } = task
 
       const deleteHundeler = (id) => {
-            fetch(`http://localhost:5000/task/${id}`, {
+            fetch(`https://git.heroku.com/damp-fortress-98900.git/task/${id}`, {
                   method: 'DELETE',
             })
             .then(res => res.json())
